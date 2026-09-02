@@ -1,0 +1,38 @@
+l0rd@l0rd-TheMerciful:~$ mkdir -p ~/linux-labor/linux-grundlagen/dateisystem
+l0rd@l0rd-TheMerciful:~$ cd ~/linux-labor/linux-grundlagen/dateisystem
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ pwd
+/home/l0rd/linux-labor/linux-grundlagen/dateisystem
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ mkdir dokumente
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ mkdir backups
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ mkdir scripts
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ tourch test.txt
+Command 'tourch' not found, did you mean:
+  command 'touch' from deb coreutils (9.4-3ubuntu6.2)
+Try: sudo apt install <deb name>
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ touch test.txtl0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ touch dokumente/notizen.txt
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ ls
+backups  dokumente  scripts  test.txt
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ ls -ls
+total 20
+4 drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:29 backups
+4 drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:30 dokumente
+4 drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:30 scripts
+8 -rw-rw-r-- 1 l0rd l0rd    0 Sep  1 23:30 test.txt
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ ls -la
+total 28
+drwxrwxr-x 5 l0rd l0rd 4096 Sep  1 23:30 .
+drwxrwxr-x 3 l0rd l0rd 4096 Sep  1 23:28 ..
+drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:29 backups
+drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:30 dokumente
+drwxrwxr-x 2 l0rd l0rd 4096 Sep  1 23:30 scripts
+-rw-rw-r-- 1 l0rd l0rd    0 Sep  1 23:30 test.txt
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ cd dokumente
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem/dokumente$ pwd
+/home/l0rd/linux-labor/linux-grundlagen/dateisystem/dokumente
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem/dokumente$ ls
+notizen.txt
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem/dokumente$ cd ..
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ pwd
+/home/l0rd/linux-labor/linux-grundlagen/dateisystem
+l0rd@l0rd-TheMerciful:~/linux-labor/linux-grundlagen/dateisystem$ 
+
