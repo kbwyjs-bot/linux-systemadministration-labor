@@ -1,0 +1,38 @@
+Experiment: SIGTERM und Xorg
+
+Befehl:
+sudo kill -15 <Xorg_PID>
+
+
+Beobachtung:
+Die grafische Sitzung wurde beendet und ich gelangte zurück zum Anmeldebildschirm. Nach der erneuten Anmeldung konnte Firefox meine vorherigen Tabs wiederherstellen.
+Aber geöffnete Anwendungen wie die Befehlszeile waren verschwunden.
+
+Schlussfolgerung:
+SIGTERM fordert eine geordnete Beendigung des Prozesses an. Das Beenden eines grundlegenden Prozesses wie Xorg kann jedoch dazu führen, dass abhängige Komponenten der grafischen Sitzung auf unerwartete Weise heruntergefahren werden.
+
+Wichtige Signale
+
+SIGHUP    1  Beenden oder Verbindungsabbruch signalisieren
+SIGINT    2  Unterbrechung (Interrupt), z. B. `Strg+C`
+SIGQUIT   3  Beenden mit Core-Dump (Speicherabbild)
+SIGKILL   9  Sofortiges Beenden, kein Aufräumen
+SIGTERM   15  Anforderung zur geordneten Beendigung
+SIGSTOP   19  Prozess sofort anhalten
+SIGCONT   18  Angehaltenen Prozess fortsetzen
+
+
+`SIGTERM` ------> „Bitte sauber herunterfahren.“
+
+`SIGKILL` ----> „Sofort beenden. Jetzt gleich.“
+
+`SIGQUIT` ---> „Einfach beenden und – falls möglich – den letzten Zustand melden; wenn nicht: auf Wiedersehen.“
+
+`SIGINT` ---> „Entschuldigung.“
+
+`SIGHUP` ---> „Ah, tut mir leid, der Chef hat gesagt, du sollst auflegen.“
+
+Verwendung:
+sudo kill -Flag <PID>
+Beispiel:
+sudo kill -15 66505
